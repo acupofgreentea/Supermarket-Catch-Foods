@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class ObjectThrowForce : MonoBehaviour
 {
-    [SerializeField] private int maxThrowForce;
-    [SerializeField] private int minThrowForce;
+    [SerializeField] private int minForceX;
+    [SerializeField] private int maxForceX;
+    [SerializeField] private int minForceY;
+    [SerializeField] private int maxForceY;
     
-    private int throwForce;
+    private int throwForceX;
+    private int throwForceY;
+
     private Rigidbody2D rb;
 
     private void Start() 
     {
         ThrowObject();
+        Debug.Log(throwForceX);
+    }
+
+    public void SetXDirection(int multiplier)
+    {
+        minForceX *= multiplier;
+        maxForceX *= multiplier;
     }
 
     private void Awake() 
@@ -24,8 +35,10 @@ public class ObjectThrowForce : MonoBehaviour
 
     private Vector2 RandomForce()
     {
-        throwForce = Random.Range(minThrowForce, maxThrowForce);
+        throwForceX = Random.Range(minForceX, maxForceX);
 
-        return new Vector2(throwForce, throwForce);
+        throwForceY = Random.Range(minForceY, maxForceY);
+
+        return new Vector2(throwForceX, throwForceY);
     }
 }
