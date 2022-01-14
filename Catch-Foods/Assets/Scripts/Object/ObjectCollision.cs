@@ -18,7 +18,6 @@ public class ObjectCollision : MonoBehaviour
         if(other.CompareTag(cart))
         {
             GameManager.Instance.UpdateScore(spawnableObject.Point);
-            Debug.Log(GameManager.Instance.Score);
 
             Destroy(gameObject);
         }
@@ -26,7 +25,6 @@ public class ObjectCollision : MonoBehaviour
         if(other.CompareTag(deadZone))
         {
             GameManager.Instance.UpdateScore(-spawnableObject.Point);
-            Debug.Log(GameManager.Instance.Score);
 
             Destroy(gameObject);
         }

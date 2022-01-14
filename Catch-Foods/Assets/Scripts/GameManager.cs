@@ -1,26 +1,63 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-    public static GameManager Instance;
     public int Score{get; set;}
 
-    private void Awake() 
-    {
-        if(Instance == null)
-        {
-            Instance = this;
+    public float Timer {get; set;}
 
-            DontDestroyOnLoad(gameObject);
+    [SerializeField] private int desiredScore = 100;
+    public int DesiredScore {get => desiredScore; set => desiredScore = value;}
+    
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+
+    private void Start() 
+    {
+        Timer = 10f;
+    }
+
+    private void Update() 
+    {
+        if(Timer >= 0f)
+        {
+            UpdateTime();
         }
         else
         {
-            Destroy(gameObject);
+            PauseGame();
+
+            CheckScore();
         }
+    }
+
+    private void CheckScore()
+    {
+        if(desiredScore >= Score)
+            {
+                // fail level => show ui 
+                // restart game => reload scene
+            }
+            else
+            {
+                // load next level => levelmanager.instance.LoadNextLevel
+            }
+    }
+
+    private void UpdateTime()
+    {
+        Timer -= Time.deltaTime;
     }
 
     public void UpdateScore(int scoreToAdd)
     {
         Score += scoreToAdd;
+    }
+
+    private void PauseGame()
+    {
+        Time.timeScale = 0;
     }
 }
