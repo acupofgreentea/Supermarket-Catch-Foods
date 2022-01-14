@@ -1,30 +1,30 @@
 using UnityEngine;
+using System;
 
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private int desiredScore = 100;
-    [SerializeField] private float _timer = 60f;
     [SerializeField] private int addToDesiredScore = 30;
 
-    public int Score{get; set;}
+    public int Score {get; set;}
 
-    public float Timer {get => _timer; set => _timer = value;}
-
-    public int DesiredScore {get => desiredScore; set => desiredScore = value;}
+    public float Timer {get; set;}
 
     public bool IsReadyNextLevel{get; private set;}
-    
+
+    public static Action OnNextLevel;
     private void OnEnable() 
     {
-        LevelManager.OnNextLevel += ResetScoreForNextLevel;
-        LevelManager.OnNextLevel += UpdateDesiredScore;
-        LevelManager.OnNextLevel += CheckScoreForNextLevel;
-        LevelManager.OnNextLevel += ResetTimeForNextLevel;
+        OnNextLevel += ResetTimeForNextLevel;
+        OnNextLevel += ResetScoreForNextLevel;
+        OnNextLevel += UpdateDesiredScore;
     }
     
     protected override void Awake()
     {
         base.Awake();
+
+        Timer = 10f;
     }
     private void Update() 
     {
@@ -35,15 +35,16 @@ public class GameManager : Singleton<GameManager>
         else
         {
             CheckScoreForNextLevel();
-            Debug.Log("Checks");
         }
     }
 
     private void CheckScoreForNextLevel()
     {
-        if(desiredScore <= Score)
+        if(Score >= desiredScore)
         {
             IsReadyNextLevel = true;
+            
+            OnNextLevel();
         }
         else
         {
@@ -63,7 +64,7 @@ public class GameManager : Singleton<GameManager>
     
     private void UpdateDesiredScore()
     {
-        DesiredScore += addToDesiredScore;
+        desiredScore += addToDesiredScore;
     }
 
     private void ResetTimeForNextLevel()
@@ -76,20 +77,10 @@ public class GameManager : Singleton<GameManager>
         Score = 0;
     }
 
-    private void PauseGame()
+    private void OnDisable() 
     {
-        Time.timeScale = 0;
-    }
-    private void ResumeGame()
-    {
-        Time.timeScale = 1;
-    }
-    
-    private void OnDisable()
-    {
-        LevelManager.OnNextLevel -= ResetScoreForNextLevel;
-        LevelManager.OnNextLevel -= UpdateDesiredScore;
-        LevelManager.OnNextLevel -= CheckScoreForNextLevel;
-        LevelManager.OnNextLevel -= ResetTimeForNextLevel;
+        OnNextLevel -= ResetTimeForNextLevel;
+        OnNextLevel -= ResetScoreForNextLevel;
+        OnNextLevel -= UpdateDesiredScore;
     }
 }

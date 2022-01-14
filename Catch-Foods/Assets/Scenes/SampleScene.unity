@@ -153,8 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   desiredScore: 3
-  _timer: 10
-  addToDesiredScore: 30
+  addToDesiredScore: 5
 --- !u!4 &18198291
 Transform:
   m_ObjectHideFlags: 0

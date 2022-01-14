@@ -11,6 +11,11 @@ public class SpawnManager : MonoBehaviour
 
     public float SpawnRate{get; set;}
 
+    private void OnEnable() 
+    {
+        GameManager.OnNextLevel += SetSpawnRate;
+    }
+
     private void Start() 
     {
         SpawnRate = 2f;
@@ -42,5 +47,10 @@ public class SpawnManager : MonoBehaviour
             
             SpawnObject();
         }
+    }
+    
+    private void OnDisable() 
+    {
+        GameManager.OnNextLevel += SetSpawnRate;
     }
 }   
