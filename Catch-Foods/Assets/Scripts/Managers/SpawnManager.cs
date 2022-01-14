@@ -9,19 +9,13 @@ public class SpawnManager : MonoBehaviour
 
     private int randomPos;
 
+    public float SpawnRate{get; set;}
+
     private void Start() 
     {
-        StartCoroutine(SpawnRate(2f));
-    }
+        SpawnRate = 2f;
 
-    private IEnumerator SpawnRate(float spawnTime)
-    {
-        while(true)
-        {
-            yield return new WaitForSeconds(spawnTime);
-            
-            SpawnObject();
-        }
+        StartCoroutine(SpawnTimer(SpawnRate));
     }
 
     private void SpawnObject()
@@ -35,4 +29,18 @@ public class SpawnManager : MonoBehaviour
             obje.GetComponent<ObjectThrowForce>().SetXDirection(-1);
     }
 
+    private void SetSpawnRate()
+    {
+        SpawnRate -= 0.2f;
+    }
+
+    private IEnumerator SpawnTimer(float spawnTime)
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(spawnTime);
+            
+            SpawnObject();
+        }
+    }
 }   

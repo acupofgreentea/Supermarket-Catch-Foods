@@ -162,10 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac782ff4eb28c0147b492357804d9b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minForceX: 2
-  maxForceX: 10
-  minForceY: 1
-  maxForceY: 9
+  minForceX: 5
+  maxForceX: 15
+  minForceY: 3
+  maxForceY: 12
 --- !u!114 &7720374898229360001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +180,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnableObjects:
   - {fileID: 11400000, guid: 078f58c369a02c74ab726dc35a517491, type: 2}
+  - {fileID: 11400000, guid: 78e8f8f2217980e4299cdec0977c009e, type: 2}
+  - {fileID: 11400000, guid: 48adab42d0d5ea946ac48c2c401dcbe4, type: 2}
+  - {fileID: 11400000, guid: 50b37d99da2fb7d41b4063bae52085f0, type: 2}
+  - {fileID: 11400000, guid: 3611f7fecc0a72e4b8064beb165f3154, type: 2}
+  - {fileID: 11400000, guid: c36c6fa78cdad9d4cbe5f40c6b60aad2, type: 2}
+  - {fileID: 11400000, guid: fffcf5a2d52968e459d0649626dc93dd, type: 2}
+  - {fileID: 11400000, guid: f559ae42c884f8340954b97c85aa4f76, type: 2}
+  - {fileID: 11400000, guid: 1abc8e2bc624bd646b5a6628a8f559f4, type: 2}
+  - {fileID: 11400000, guid: 6bbf95040488edf43875dd74d7c44631, type: 2}
+  - {fileID: 11400000, guid: 25bc2c9e919de264c85727788836d196, type: 2}
 --- !u!114 &2505743905346211276
 MonoBehaviour:
   m_ObjectHideFlags: 0

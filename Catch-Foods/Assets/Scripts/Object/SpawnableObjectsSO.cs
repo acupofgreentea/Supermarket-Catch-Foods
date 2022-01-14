@@ -1,10 +1,8 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ThrowableObject")]
+[CreateAssetMenu(menuName = "ThrowableObject", fileName = "Throwable Object")]
 public class SpawnableObjectsSO : ScriptableObject
 {
-    public string objectName;
-
     public int point;
 
     public Sprite sprite;
