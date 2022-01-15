@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
 
     private void OnEnable() 
     {
-        GameManager.OnFailedLevel += FailedText;
+        GameManager.OnFailedLevel += ShowGameOverPanel;
     }
 
     private void Update() 
@@ -30,13 +30,13 @@ public class UIManager : MonoBehaviour
         timeText.text = "Time: " + Mathf.Round(GameManager.Instance.Timer);
     }
 
-    private void FailedText()
+    private void ShowGameOverPanel()
     {
         gameOverPanel.SetActive(true);
     }
     private void OnDisable() 
     {
-        GameManager.OnFailedLevel -= FailedText;
+        GameManager.OnFailedLevel -= ShowGameOverPanel;
     }
 
     public void RestartGame()
