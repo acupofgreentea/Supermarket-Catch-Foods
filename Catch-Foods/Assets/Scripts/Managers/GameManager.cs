@@ -10,14 +10,18 @@ public class GameManager : Singleton<GameManager>
 
     public float Timer {get; set;}
 
-    public bool IsReadyNextLevel{get; private set;}
-
     public static Action OnNextLevel;
+
+    public static Action OnFailedLevel;
+
+    public bool IsGameOver{get; set;}
     private void OnEnable() 
     {
         OnNextLevel += ResetTimeForNextLevel;
         OnNextLevel += ResetScoreForNextLevel;
         OnNextLevel += UpdateDesiredScore;
+
+        OnFailedLevel += CheckGameOver;
     }
     
     protected override void Awake()
@@ -42,13 +46,11 @@ public class GameManager : Singleton<GameManager>
     {
         if(Score >= desiredScore)
         {
-            IsReadyNextLevel = true;
-            
             OnNextLevel();
         }
         else
         {
-            IsReadyNextLevel =  false;
+            OnFailedLevel();
         }
     }
 
@@ -77,10 +79,17 @@ public class GameManager : Singleton<GameManager>
         Score = 0;
     }
 
+    private void CheckGameOver()
+    {
+        IsGameOver = true;
+    }
+
     private void OnDisable() 
     {
         OnNextLevel -= ResetTimeForNextLevel;
         OnNextLevel -= ResetScoreForNextLevel;
         OnNextLevel -= UpdateDesiredScore;
+
+        OnFailedLevel -= CheckGameOver;
     }
 }

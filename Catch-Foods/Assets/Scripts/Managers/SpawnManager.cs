@@ -11,14 +11,20 @@ public class SpawnManager : MonoBehaviour
 
     public float SpawnRate{get; set;}
 
+    public bool CanSpawn{get; set;}
+
     private void OnEnable() 
     {
         GameManager.OnNextLevel += SetSpawnRate;
+
+        GameManager.OnFailedLevel += SetCanSpawn;
     }
 
     private void Start() 
     {
         SpawnRate = 2f;
+
+        CanSpawn = true;
 
         StartCoroutine(SpawnTimer(SpawnRate));
     }
@@ -39,9 +45,14 @@ public class SpawnManager : MonoBehaviour
         SpawnRate -= 0.2f;
     }
 
+    public void SetCanSpawn()
+    {
+        CanSpawn = false;
+    }
+
     private IEnumerator SpawnTimer(float spawnTime)
     {
-        while(true)
+        while(CanSpawn)
         {
             yield return new WaitForSeconds(spawnTime);
             
@@ -52,5 +63,7 @@ public class SpawnManager : MonoBehaviour
     private void OnDisable() 
     {
         GameManager.OnNextLevel += SetSpawnRate;
+
+        GameManager.OnFailedLevel -= SetCanSpawn;
     }
 }   

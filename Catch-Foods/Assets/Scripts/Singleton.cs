@@ -8,8 +8,6 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         if(Instance == null)
         {
             Instance = this as T;
-
-            DontDestroyOnLoad(gameObject);
         }
         else
         {

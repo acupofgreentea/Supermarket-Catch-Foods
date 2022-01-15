@@ -17,6 +17,14 @@ public class ObjectThrowForce : MonoBehaviour
         ThrowObject();
     }
 
+    private void FixedUpdate() 
+    {
+        if(GameManager.Instance.IsGameOver)
+        {
+            rb.bodyType = RigidbodyType2D.Static;
+        }
+    }
+
     public void SetXDirection(int multiplier)
     {
         minForceX *= multiplier;
