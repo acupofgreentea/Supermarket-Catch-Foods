@@ -4,20 +4,21 @@ public class DragObjects : MonoBehaviour
 {
     private bool isDragging;
 
-    private Rigidbody2D rb;
-
     private Animator anim;
 
     private ObjectCollision objectCollision;
 
+    private IDragger dragger;
+
     private void Awake() 
     {
-        rb = GetComponent<Rigidbody2D>();
-
         anim = GetComponent<Animator>();
 
         objectCollision = GetComponent<ObjectCollision>();
+
+        dragger = GetComponent<IDragger>();
     }
+    
     private void Update() 
     {
         MoveObject();   
@@ -27,16 +28,27 @@ public class DragObjects : MonoBehaviour
             SetAnimator(false);
         }
     }
+
+    private void MoveObject()
+    {
+        if(isDragging)
+        {
+            dragger.MoveObject();
+        }
+    }
+    
+    private void SetAnimator(bool enabled)
+    {
+        anim.enabled = enabled;
+    }
+
     private void OnMouseDown() 
     {
-        if(!GameManager.Instance.IsGameOver)
-        {
-            isDragging = true;
-            
-            SetAnimator(false);
+        isDragging = true;
 
-            rb.velocity = Vector2.zero;
-        }
+        dragger.MoveObject();
+
+        SetAnimator(false);
     }
 
     private void OnMouseUp() 
@@ -46,20 +58,5 @@ public class DragObjects : MonoBehaviour
         if(!objectCollision.IsAddedToCart)
         SetAnimator(true);
     }
-
-    private void MoveObject()
-    {
-        if(isDragging)
-        {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            rb.MovePosition(rb.position + mousePosition);
-        }
-    }
-
-    private void SetAnimator(bool enabled)
-    {
-        anim.enabled = enabled;
-    }
-
-    
 }
+

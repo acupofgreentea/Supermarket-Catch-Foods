@@ -3,15 +3,11 @@ using System.Collections;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField] private Transform[] spawnPoints;
-
-    [SerializeField] private GameObject throwableObjects;
-
-    private int randomPos;
-
     public float SpawnRate{get; set;}
 
     public bool CanSpawn{get; set;}
+
+    private ISpawner spawner;
 
     private void OnEnable() 
     {
@@ -22,6 +18,8 @@ public class SpawnManager : MonoBehaviour
 
     private void Start() 
     {
+        spawner = GetComponent<ISpawner>();
+
         SpawnRate = 2f;
 
         CanSpawn = true;
@@ -29,20 +27,14 @@ public class SpawnManager : MonoBehaviour
         StartCoroutine(SpawnTimer(SpawnRate));
     }
 
-    private void SpawnObject()
-    {
-        randomPos = Random.Range(0, spawnPoints.Length);
-
-        GameObject obje = Instantiate(throwableObjects, spawnPoints[randomPos].position, Quaternion.identity);
-
-        if(randomPos == 0) {return;}
-        
-            obje.GetComponent<ObjectThrowForce>().SetXDirection(-1);
-    }
-
     private void SetSpawnRate()
     {
         SpawnRate -= 0.2f;
+
+        if(SpawnRate <= 0.5f)
+        {
+            SpawnRate = 0.5f;
+        }  
     }
 
     public void SetCanSpawn()
@@ -56,7 +48,7 @@ public class SpawnManager : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnTime);
             
-            SpawnObject();
+            spawner.SpawnObject();
         }
     }
     
@@ -66,4 +58,4 @@ public class SpawnManager : MonoBehaviour
 
         GameManager.OnFailedLevel -= SetCanSpawn;
     }
-}   
+}
