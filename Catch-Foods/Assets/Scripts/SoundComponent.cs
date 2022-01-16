@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SoundComponent : AudioManager
+public class SoundComponent : MonoBehaviour
 {
     [SerializeField] protected Sounds[] sounds;
     
@@ -10,20 +10,10 @@ public class SoundComponent : AudioManager
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
+            s.source.outputAudioMixerGroup = s.mixer;
             s.source.loop = s.isLoop;
             s.source.volume = s.volume;
             s.source.playOnAwake = s.isPlayOnAwake;
-
-            switch (s.audioTypes)
-            {
-                case Sounds.AudioTypes.SoundEffect:
-                    s.source.outputAudioMixerGroup = soundEffectMixerGroup;
-                    break;
-
-                case Sounds.AudioTypes.Music:
-                    s.source.outputAudioMixerGroup = musicMixerGroup;
-                    break;
-            }
 
             if(s.isPlayOnAwake)
             {

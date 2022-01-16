@@ -1,17 +1,22 @@
 using UnityEngine;
 using UnityEngine.Audio;
-using System;
 
 public class AudioManager : MonoBehaviour
 {
     private float musicVolume;
     private float soundEffectVolume;
-    [SerializeField] protected AudioMixerGroup musicMixerGroup;
-    [SerializeField] protected AudioMixerGroup soundEffectMixerGroup;
+    [SerializeField] private AudioMixerGroup musicMixerGroup;
+    [SerializeField] private AudioMixerGroup soundEffectMixerGroup;
+    [SerializeField] private GameObject settingsPanel;
 
     private void Awake() 
     {
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void ControlSettingsPanel(bool active)
+    {
+        settingsPanel.SetActive(active);
     }
     public void OnMusicSliderValueChanged(float value)
     {

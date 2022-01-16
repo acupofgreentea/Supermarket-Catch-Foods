@@ -55,8 +55,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
     {
         if(placementId == "AddPoint" && showResult == ShowResult.Finished)
         {
-            Debug.Log("Rewarded");
-            // add point
+            GameManager.Instance.AddPointAfterRewardedVideo();
         }
     }
 }

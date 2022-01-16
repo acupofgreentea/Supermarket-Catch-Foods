@@ -240,12 +240,14 @@ MonoBehaviour:
   sounds:
   - source: {fileID: 0}
     clip: {fileID: 8300000, guid: b87c26e0a5a6b2946aeb2bccbca21194, type: 3}
+    mixer: {fileID: -5642600602244328212, guid: 534ce5d6c93954748b71d865d0dc258d, type: 2}
     audioTypes: 0
     isLoop: 0
     isPlayOnAwake: 0
     volume: 1
   - source: {fileID: 0}
     clip: {fileID: 8300000, guid: 5516e8ae31841c7479dfef086ccde609, type: 3}
+    mixer: {fileID: -5642600602244328212, guid: 534ce5d6c93954748b71d865d0dc258d, type: 2}
     audioTypes: 0
     isLoop: 0
     isPlayOnAwake: 0

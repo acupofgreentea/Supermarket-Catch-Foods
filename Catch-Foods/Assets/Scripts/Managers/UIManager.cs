@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 public class UIManager : MonoBehaviour
 {
@@ -37,15 +36,5 @@ public class UIManager : MonoBehaviour
     private void OnDisable() 
     {
         GameManager.OnFailedLevel -= ShowGameOverPanel;
-    }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void ExitGame()
-    {
-        Application.Quit();
     }
 }

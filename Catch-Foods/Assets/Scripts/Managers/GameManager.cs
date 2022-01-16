@@ -29,6 +29,8 @@ public class GameManager : Singleton<GameManager>
         base.Awake();
 
         Timer = 10f;
+
+        IsGameOver = false;
     }
     private void Update() 
     {
@@ -44,7 +46,7 @@ public class GameManager : Singleton<GameManager>
 
     private void CheckScoreForNextLevel()
     {
-        if(Score >= desiredScore)
+        if(Score >= desiredScore && !IsGameOver)
         {
             OnNextLevel();
         }
@@ -62,6 +64,16 @@ public class GameManager : Singleton<GameManager>
     public void UpdateScore(int scoreToAdd)
     {
         Score += scoreToAdd;
+
+        if(Score <= 0)
+        {
+            Score = 0;
+        }
+    }
+
+    public void AddPointAfterRewardedVideo()
+    {
+        Score += 20;
     }
     
     private void UpdateDesiredScore()
