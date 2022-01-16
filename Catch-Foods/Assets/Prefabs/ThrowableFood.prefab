@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 8764376152012154741}
   - component: {fileID: 8764376152012154740}
   - component: {fileID: 8764376152012154745}
+  - component: {fileID: 1334501160801018925}
   - component: {fileID: 8764376152012154739}
   - component: {fileID: 8764376152012154744}
   - component: {fileID: 8764376152012154743}
   - component: {fileID: 3477668907653373754}
-  - component: {fileID: 1334501160801018925}
+  - component: {fileID: 5724139754341917120}
   m_Layer: 0
   m_Name: ThrowableFood
   m_TagString: Untagged
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 220316907
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,7 +104,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 2.25
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 1
@@ -122,7 +123,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -138,6 +139,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!95 &1334501160801018925
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8764376152012154738}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ecedaa79efdfd3547ac4e3a6f62edeb0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &8764376152012154739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,23 +223,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f19f36cec43e114792e3fd0718b7d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1334501160801018925
-Animator:
-  serializedVersion: 4
+--- !u!114 &5724139754341917120
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8764376152012154738}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ecedaa79efdfd3547ac4e3a6f62edeb0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b287f8421f7ed428ba6b7fc17c3044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMixerGroup: {fileID: 1838404667131432943, guid: 534ce5d6c93954748b71d865d0dc258d, type: 2}
+  soundEffectMixerGroup: {fileID: -5642600602244328212, guid: 534ce5d6c93954748b71d865d0dc258d, type: 2}
+  sounds:
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: b87c26e0a5a6b2946aeb2bccbca21194, type: 3}
+    audioTypes: 0
+    isLoop: 0
+    isPlayOnAwake: 0
+    volume: 1
+  - source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 5516e8ae31841c7479dfef086ccde609, type: 3}
+    audioTypes: 0
+    isLoop: 0
+    isPlayOnAwake: 0
+    volume: 1

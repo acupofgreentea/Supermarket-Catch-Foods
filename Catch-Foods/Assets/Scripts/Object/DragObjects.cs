@@ -8,11 +8,15 @@ public class DragObjects : MonoBehaviour
 
     private Animator anim;
 
+    private ObjectCollision objectCollision;
+
     private void Awake() 
     {
         rb = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
+
+        objectCollision = GetComponent<ObjectCollision>();
     }
     private void Update() 
     {
@@ -39,6 +43,7 @@ public class DragObjects : MonoBehaviour
     {
         isDragging = false;
 
+        if(!objectCollision.IsAddedToCart)
         SetAnimator(true);
     }
 
