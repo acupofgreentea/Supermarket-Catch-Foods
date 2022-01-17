@@ -12,7 +12,7 @@ public class ObjectThrowForce : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private void Start() 
+    private void OnEnable() 
     {
         ThrowObject();
     }
@@ -47,5 +47,11 @@ public class ObjectThrowForce : MonoBehaviour
         throwForceY = Random.Range(minForceY, maxForceY);
 
         return new Vector2(throwForceX, throwForceY);
+    }
+
+    private void OnDisable() 
+    {
+        minForceX = Mathf.Abs(minForceX);
+        maxForceX = Mathf.Abs(maxForceX);
     }
 }

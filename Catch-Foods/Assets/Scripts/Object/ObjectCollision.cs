@@ -49,7 +49,7 @@ public class ObjectCollision : MonoBehaviour
 
             sound.PlaySound(1);
 
-            Destroy(gameObject, 2f);
+            gameObject.SetActive(false);
         }
     }
 }
