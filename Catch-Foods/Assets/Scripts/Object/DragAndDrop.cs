@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ObjectDragger : MonoBehaviour, IDragger
+public class DragAndDrop : MonoBehaviour, IDragger
 {
     private Rigidbody2D rb;
 

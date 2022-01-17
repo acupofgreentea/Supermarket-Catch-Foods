@@ -3,8 +3,8 @@ using System;
 
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] private int desiredScore = 100;
-    [SerializeField] private int addToDesiredScore = 30;
+    [SerializeField] private int desiredScore;
+    [SerializeField] private int addToDesiredScore;
 
     public int Score {get; set;}
 
@@ -56,44 +56,26 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    private void UpdateTime()
-    {
-        Timer -= Time.deltaTime;
-    }
+    public void AddPointAfterRewardedVideo() => Score += 20;
+    
+    private void UpdateTime() => Timer -= Time.deltaTime;
+    
+    private void UpdateDesiredScore() => desiredScore += addToDesiredScore;
 
+    private void ResetTimeForNextLevel() => Timer = 10;
+
+    private void ResetScoreForNextLevel() => Score = 0;
+
+    private void CheckGameOver() => IsGameOver = true;
+    
     public void UpdateScore(int scoreToAdd)
     {
         Score += scoreToAdd;
 
         if(Score <= 0)
         {
-            Score = 0;
+            ResetScoreForNextLevel();
         }
-    }
-
-    public void AddPointAfterRewardedVideo()
-    {
-        Score += 20;
-    }
-    
-    private void UpdateDesiredScore()
-    {
-        desiredScore += addToDesiredScore;
-    }
-
-    private void ResetTimeForNextLevel()
-    {
-        Timer = 10;
-    }
-
-    private void ResetScoreForNextLevel()
-    {
-        Score = 0;
-    }
-
-    private void CheckGameOver()
-    {
-        IsGameOver = true;
     }
 
     private void OnDisable() 

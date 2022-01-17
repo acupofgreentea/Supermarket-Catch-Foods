@@ -16,16 +16,16 @@ public class SpawnManager : MonoBehaviour
         GameManager.OnFailedLevel += SetCanSpawn;
     }
 
-    private void Start() 
+    private void Awake() 
     {
         spawner = GetComponent<ISpawner>();
 
         SpawnRate = 2f;
 
         CanSpawn = true;
-
-        StartCoroutine(SpawnTimer(SpawnRate));
     }
+
+    private void Start() => StartCoroutine(SpawnTimer(SpawnRate));
 
     private void SetSpawnRate()
     {
@@ -37,10 +37,7 @@ public class SpawnManager : MonoBehaviour
         }  
     }
 
-    public void SetCanSpawn()
-    {
-        CanSpawn = false;
-    }
+    public void SetCanSpawn() => CanSpawn = false;
 
     private IEnumerator SpawnTimer(float spawnTime)
     {

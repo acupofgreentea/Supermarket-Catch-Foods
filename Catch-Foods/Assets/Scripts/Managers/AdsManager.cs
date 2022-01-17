@@ -9,12 +9,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 #else
     string gameId = "4562892";
 #endif
-
-    private void Awake() 
-    {
-
-    }
-    void Start()
+    private void Start()
     {
         Advertisement.Initialize(gameId);
         Advertisement.AddListener(this);

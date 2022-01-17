@@ -23,16 +23,15 @@ public class DragObjects : MonoBehaviour
     {
         MoveObject();   
 
-        if(GameManager.Instance.IsGameOver)
-        {
+        if(GameManager.Instance.IsGameOver) 
             SetAnimator(false);
-        }
     }
 
     private void MoveObject()
     {
         if(isDragging)
         {
+            dragger.Dragging();
             dragger.MoveObject();
         }
     }

@@ -31,7 +31,6 @@ public class ObjectCollision : MonoBehaviour
         {
             if(!IsAddedToCart)
             {
-                
                 GameManager.Instance.UpdateScore(spawnableObject.Point);
 
                 sound.PlaySound(0);
