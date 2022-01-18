@@ -15,7 +15,7 @@ C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61517
+52482
 Successfully changed project path to: C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
 C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 111.85 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 135.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.6f1 (8c4e826ba445)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005538 seconds.
+Registered in 0.006031 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 102.31 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 127.17 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.580 seconds
+- Completed reload, in  0.636 seconds
 Domain Reload Profiling:
-	ReloadAssembly (580ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (637ms)
+		BeginReloadAssembly (81ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (437ms)
-			LoadAssemblies (68ms)
+		EndReloadAssembly (470ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (91ms)
+			SetupTypeCache (89ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (273ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (299ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
+				RefreshPlugins (127ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (113ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008237 seconds.
+Registered in 0.010271 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\akinn\Desktop\Supermarket-Catch-Foods\Catch-Foods\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\akinn\Desktop\Supermarket-Catch-Foods\Catch-Foods\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 103.83 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 132.76 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.514 seconds
+- Completed reload, in  1.753 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1515ms)
-		BeginReloadAssembly (112ms)
+	ReloadAssembly (1754ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1302ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1538ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (213ms)
+			SetupTypeCache (239ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (916ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (1096ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (104ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (663ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (133ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (737ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4087 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 66 unused Assets / (226.6 KB). Loaded Objects now: 4514.
-Memory consumption went from 153.7 MB to 153.4 MB.
-Total: 3.811900 ms (FindLiveObjects: 0.432600 ms CreateObjectMapping: 0.113600 ms MarkObjects: 3.089200 ms  DeleteObjects: 0.175200 ms)
+Unloading 5542 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 71 unused Assets / (0.9 MB). Loaded Objects now: 5963.
+Memory consumption went from 215.9 MB to 215.0 MB.
+Total: 5.225800 ms (FindLiveObjects: 0.619100 ms CreateObjectMapping: 0.167600 ms MarkObjects: 3.995800 ms  DeleteObjects: 0.441700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,136 +159,262 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 15285.792544 seconds.
-  path: Assets/Sprites/background1.png
-  artifactKey: Guid(165e6a9610e84674688de0eb33fd007a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/background1.png using Guid(165e6a9610e84674688de0eb33fd007a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eeeca6721f9bd66ba30799edbbd6a18') in 0.296573 seconds 
+  Time since last request: 37023.939757 seconds.
+  path: Assets/newBackground.png
+  artifactKey: Guid(5fa6ccf6337c5ed4fa5b78ace11b4c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/newBackground.png using Guid(5fa6ccf6337c5ed4fa5b78ace11b4c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666a5876c1a916d8d40fb0ddcb38f6d1') in 0.271340 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2380.827466 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Split_Edge@3x.png
-  artifactKey: Guid(7764b2bf79a49894e8ea10f3d661a4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Split_Edge@3x.png using Guid(7764b2bf79a49894e8ea10f3d661a4ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c467d7df0cc08135142c213391db2d') in 0.146775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/Handles/ss_playhead.png
-  artifactKey: Guid(9ea72647c24be493ba6f15a9cd2a24ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/Handles/ss_playhead.png using Guid(9ea72647c24be493ba6f15a9cd2a24ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10a6e91420ee4e5dae24d0ab1078f6a') in 0.142712 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Food PNGs/vegetable23.png
-  artifactKey: Guid(0008933078ea3a84c9fb44774f38264d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/vegetable23.png using Guid(0008933078ea3a84c9fb44774f38264d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4874ce31f5a2abcaa83422d9ea9b30fc') in 0.390936 seconds 
+  Time since last request: 0.474326 seconds.
+  path: Assets/Sprites/Food PNGs/bread02.png
+  artifactKey: Guid(b6c47d17d4fce4741a185c9d76b372b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/bread02.png using Guid(b6c47d17d4fce4741a185c9d76b372b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9988e23bc2e0a215fc584647e3624dfa') in 0.018414 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png
-  artifactKey: Guid(311925a002f4447b3a28927169b83ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png using Guid(311925a002f4447b3a28927169b83ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22790244dbbacac161451212abe07be2') in 0.031603 seconds 
+  path: Assets/Sprites/Food PNGs/bread05.png
+  artifactKey: Guid(5fddcdbc56a247d4dbb18610e204c260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/bread05.png using Guid(5fddcdbc56a247d4dbb18610e204c260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f72f1c680f6e815fda035ed59383295') in 0.068411 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/Food PNGs/vegetable19a.png
-  artifactKey: Guid(2f3707e79bb483648ac9d7686e82a9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/vegetable19a.png using Guid(2f3707e79bb483648ac9d7686e82a9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8468a4eb7a9c75da660ac03997eb5c3d') in 0.089482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Influence@4x.png
-  artifactKey: Guid(0e0d5e38f19194a978d2f42b0b806775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Influence@4x.png using Guid(0e0d5e38f19194a978d2f42b0b806775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f2fae1c73f7ef0884163826a1e8268') in 0.084061 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Food PNGs/egg02a.png
+  artifactKey: Guid(8dd32be539b2a4c438f83db0f2d41805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/egg02a.png using Guid(8dd32be539b2a4c438f83db0f2d41805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe83cd36c987ab806cc9521b81d31380') in 0.082463 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000030 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step3.png
-  artifactKey: Guid(69899ed144c8eea4baea48b858b37746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step3.png using Guid(69899ed144c8eea4baea48b858b37746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f835cb2a7bc4f8de16928338dfeb4d') in 0.057541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Mode@2x.png
-  artifactKey: Guid(cfe99a1afb609b4488d6fc9224a62f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Mode@2x.png using Guid(cfe99a1afb609b4488d6fc9224a62f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c96bdcde078078cbc684fe80164d08d') in 0.037456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Packages/com.unity.2d.path/Editor/Handles/TangentBrokenPro.png
-  artifactKey: Guid(3f0215e89d05b544d907d3a7d34fab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.path/Editor/Handles/TangentBrokenPro.png using Guid(3f0215e89d05b544d907d3a7d34fab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5824fe0772a3fe6405a3cb758992a241') in 0.036000 seconds 
+  path: Assets/Sprites/Food PNGs/meat02a.png
+  artifactKey: Guid(7baed961ddcff564ebd4aafc1e28d3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/meat02a.png using Guid(7baed961ddcff564ebd4aafc1e28d3a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0268bfda805ca8e8a6c392943593808e') in 0.116263 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Textures/Sprite Shape Corner.png
-  artifactKey: Guid(608e61deb05c54660bebf5a4dd2ee02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/ObjectMenuCreation/DefaultAssets/Textures/Sprite Shape Corner.png using Guid(608e61deb05c54660bebf5a4dd2ee02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116461981a6def6a9b61108e19584ba2') in 0.047195 seconds 
+  path: Assets/Sprites/Food PNGs/fruit09.png
+  artifactKey: Guid(33a3ad1ada27e1d4091690fc693ed1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit09.png using Guid(33a3ad1ada27e1d4091690fc693ed1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adda0c06a9e3777b38bd1d26587362c7') in 0.056578 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Mode@3x.png
-  artifactKey: Guid(71d8b2e508f1d9947ba51013600a5eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Mode@3x.png using Guid(71d8b2e508f1d9947ba51013600a5eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c160260d76c79e6108e66c800c913b63') in 0.073187 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Food PNGs/fruit49a.png
+  artifactKey: Guid(6ee8e16ebf5686743bc51b1d6052c7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit49a.png using Guid(6ee8e16ebf5686743bc51b1d6052c7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ce1527c5068efd9ea8564e51ce03ae') in 0.183726 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Square.png
-  artifactKey: Guid(48e93eef0688c4a259cb0eddcd8661f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/Square.png using Guid(48e93eef0688c4a259cb0eddcd8661f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d673b00e89c98293bce9f8df4187b6') in 0.025675 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Food PNGs/meat01.png
+  artifactKey: Guid(6ef35b84c9f945d45b1a2bb31b44265d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/meat01.png using Guid(6ef35b84c9f945d45b1a2bb31b44265d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c90808b8869d12b39c49d5adfa6f779') in 0.026240 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step2@2x.png
-  artifactKey: Guid(0029170d14ce6c04c9f45c22cdae5559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step2@2x.png using Guid(0029170d14ce6c04c9f45c22cdae5559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6c5d2e99a4bb4f1eb4629fe7dba77c') in 0.074583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Mode.png
-  artifactKey: Guid(2ad84ec7182471b4d8c44de568e22df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Sprite_Mode.png using Guid(2ad84ec7182471b4d8c44de568e22df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bce217d37cdbb70155a9f1c00e6f4b4') in 0.060395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/SquareWithBorder.png
-  artifactKey: Guid(db750325989564987a34393247d883b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/SquareWithBorder.png using Guid(db750325989564987a34393247d883b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5000202133760717a97d548e8e0bf40') in 0.200748 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step1@2x.png
-  artifactKey: Guid(affeade9874cf2347abb155e8d0db4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/step1@2x.png using Guid(affeade9874cf2347abb155e8d0db4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493d60631a5f8390a6743dde8fe064a5') in 0.048192 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Packages/com.unity.2d.spriteshape/Editor/Handles/ss_rightrange.png
-  artifactKey: Guid(ee5df01235032491c8b180741ea820fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.spriteshape/Editor/Handles/ss_rightrange.png using Guid(ee5df01235032491c8b180741ea820fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651d8afb2c574ead6f1a0e442415dd62') in 0.025680 seconds 
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Food PNGs/fruit48.png
+  artifactKey: Guid(2a18be2efa29d4a419b04835fa2e332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit48.png using Guid(2a18be2efa29d4a419b04835fa2e332d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b183f10ac6b2a7fa2756534b12a494b8') in 0.289192 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Sprite_Influence@2x.png
-  artifactKey: Guid(80f77a76467b24d1a856328afa989eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Sprite_Influence@2x.png using Guid(80f77a76467b24d1a856328afa989eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9217608be43bea7b85353516e32086c') in 0.123614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Food PNGs/vegetable13.png
-  artifactKey: Guid(9bc12b5efb7c0b74f806ce2f0c709ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/vegetable13.png using Guid(9bc12b5efb7c0b74f806ce2f0c709ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78d8b0ff95d9482a27b08f02009aee0') in 0.041670 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Split_Edge@4x.png
-  artifactKey: Guid(21d43e7114c758c49886cb9fc604dd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Split_Edge@4x.png using Guid(21d43e7114c758c49886cb9fc604dd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e20416af97504f690e750071fb928a4') in 0.097786 seconds 
+  path: Assets/Sprites/Food PNGs/bread05a.png
+  artifactKey: Guid(82bd257d8c325c745acb4d3a4b4d79a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/bread05a.png using Guid(82bd257d8c325c745acb4d3a4b4d79a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf1cbac97e814551186643cfd921060') in 0.065781 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000025 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Sprite_Influence.png
-  artifactKey: Guid(a2db0b51e2c0e418b8d5f85cee0d4876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Sprite_Influence.png using Guid(a2db0b51e2c0e418b8d5f85cee0d4876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f2af6f550f6dd175ccdc32a8e1f077') in 0.058764 seconds 
+  path: Assets/Sprites/Food PNGs/bread02a.png
+  artifactKey: Guid(2b397d074be25b1418e4cf71a3c7fb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/bread02a.png using Guid(2b397d074be25b1418e4cf71a3c7fb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562738b62ef1d60abe9f685203db1afd') in 0.349773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Food PNGs/fruit27.png
+  artifactKey: Guid(dfd761479895e3a47a680471adcaa4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit27.png using Guid(dfd761479895e3a47a680471adcaa4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff890f53e58da09be3438d3b626e561') in 0.017292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Food PNGs/fruit03a.png
+  artifactKey: Guid(bd71a9e0e2ba6db4488edbfbf467d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit03a.png using Guid(bd71a9e0e2ba6db4488edbfbf467d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca11503b1aa632103887509e89ea86c') in 0.424398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Food PNGs/fruit13.png
+  artifactKey: Guid(4f5ee3bf4e373ed4b93ea90c4abed953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit13.png using Guid(4f5ee3bf4e373ed4b93ea90c4abed953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11dc54d721b30e87cc6333bbe197baf5') in 0.224829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Food PNGs/fruit15.png
+  artifactKey: Guid(ec5cee953160dab438e88983801b94d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit15.png using Guid(ec5cee953160dab438e88983801b94d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c8d9bf6bcbf8029cba70ece0abedf6') in 0.042377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Food PNGs/fish01a.png
+  artifactKey: Guid(62cff95c704f4d244a230f212d414aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fish01a.png using Guid(62cff95c704f4d244a230f212d414aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038687902f15697a3c16a804e230c30d') in 0.122335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Food PNGs/bread12.png
+  artifactKey: Guid(731ce9b6219c32144a4dcd73106e8633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/bread12.png using Guid(731ce9b6219c32144a4dcd73106e8633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2269cf86683915941c92869d2f15748') in 0.047114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/Food PNGs/meat01a.png
+  artifactKey: Guid(be75165001b742043a4bd3361787a6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/meat01a.png using Guid(be75165001b742043a4bd3361787a6a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea21c4fd5e951a9138ab956870821ea') in 0.070481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Food PNGs/fish01.png
+  artifactKey: Guid(ab89f728463136e4eb6d2504d1a4d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fish01.png using Guid(ab89f728463136e4eb6d2504d1a4d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb63b051876f0fb6c66753f8ce977080') in 0.457478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Food PNGs/fruit04a.png
+  artifactKey: Guid(4fbe28583e26be447a38454910f104ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit04a.png using Guid(4fbe28583e26be447a38454910f104ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c07f9882991025b1200329773757f49') in 0.043518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/Food PNGs/bread12a.png
+  artifactKey: Guid(ef6f01a1b7f55f744bc87098ad6f1664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/bread12a.png using Guid(ef6f01a1b7f55f744bc87098ad6f1664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561235d6a181b9a3f1e4f34d94df3528') in 0.065005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Food PNGs/fish14a.png
+  artifactKey: Guid(71cb7bf14d242a545a710e260d0ad1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fish14a.png using Guid(71cb7bf14d242a545a710e260d0ad1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6589bd94f1c0405a113498367009d382') in 0.119614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Food PNGs/fruit14.png
+  artifactKey: Guid(2d5b2b79dbd20b54ca90c33f0443f11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit14.png using Guid(2d5b2b79dbd20b54ca90c33f0443f11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3cedad0f2600ac859fa17d5af43595') in 0.056434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/Food PNGs/bread04.png
+  artifactKey: Guid(bcbd9f858cbc82b4ea7fae1ccc76cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/bread04.png using Guid(bcbd9f858cbc82b4ea7fae1ccc76cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d38bd56ac2527f3f53468d656893d6a') in 0.045722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/Food PNGs/fruit13a.png
+  artifactKey: Guid(429f841090f8c1749a7af3453d46c517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit13a.png using Guid(429f841090f8c1749a7af3453d46c517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd025dc8acf3d1d5736b7512f5a372dd6') in 0.062278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/Food PNGs/fruit09a.png
+  artifactKey: Guid(0b4c3e1fc8b5a704a97293856d4b9816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit09a.png using Guid(0b4c3e1fc8b5a704a97293856d4b9816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f1d0d7aae8b1b79fed7f43bcc0af29') in 0.056850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Food PNGs/fruit02a.png
+  artifactKey: Guid(d927fa268e285e044bf0e4ac7489f775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit02a.png using Guid(d927fa268e285e044bf0e4ac7489f775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3662f9dc1f2925233065da68b508d665') in 0.075646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Food PNGs/fruit01.png
+  artifactKey: Guid(9664a0f4829b154419b9de95c018e25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fruit01.png using Guid(9664a0f4829b154419b9de95c018e25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa13fa85de58c48c8e258293562711b') in 0.061791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Food PNGs/fish18a.png
+  artifactKey: Guid(ad4cd6c36c469274ea46fd126c8b7b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/fish18a.png using Guid(ad4cd6c36c469274ea46fd126c8b7b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ddc73af6fea42f2b7f24c3775031a58') in 0.091197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 170.354909 seconds.
+  path: Assets/Sprites/Food PNGs/mushroom06.png
+  artifactKey: Guid(b7de90d24b323264ea726ffd3550479f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/mushroom06.png using Guid(b7de90d24b323264ea726ffd3550479f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6efa17c01e7855f9963dce13913ed981') in 0.237295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable25.png
+  artifactKey: Guid(14ef95b10f28e034bbd03123fcd4b1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable25.png using Guid(14ef95b10f28e034bbd03123fcd4b1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2d3ebec888641f3ce8e06f74c1362e') in 0.024575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable25a.png
+  artifactKey: Guid(b4de350bbd2d5f442ab40bcd0e01065c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable25a.png using Guid(b4de350bbd2d5f442ab40bcd0e01065c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837a1c891e606ecb2a188c689de5aa38') in 0.165530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable34.png
+  artifactKey: Guid(ad54558323481bc46bbdc62fddd894a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable34.png using Guid(ad54558323481bc46bbdc62fddd894a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '826fa8a7b62ad16d8e2503f0b4b550f9') in 0.019756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable13.png
+  artifactKey: Guid(9bc12b5efb7c0b74f806ce2f0c709ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable13.png using Guid(9bc12b5efb7c0b74f806ce2f0c709ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db168a0adda651f94717d5b4896837e2') in 0.081506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable34a.png
+  artifactKey: Guid(88a17bd20aac8e1418282abbefc7f6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable34a.png using Guid(88a17bd20aac8e1418282abbefc7f6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c69f5f1dea42bb08ba0eba329ca04e3') in 0.032328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable19a.png
+  artifactKey: Guid(2f3707e79bb483648ac9d7686e82a9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable19a.png using Guid(2f3707e79bb483648ac9d7686e82a9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71834c23eaabb97fa96e8086114d234') in 0.093761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable03a.png
+  artifactKey: Guid(9b1105b5546a2aa46830ecbc0b4a4d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable03a.png using Guid(9b1105b5546a2aa46830ecbc0b4a4d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf39d46d22b6edee6b160937236bb9e') in 0.050412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable27.png
+  artifactKey: Guid(0b197864623923e459de92309ff6c69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable27.png using Guid(0b197864623923e459de92309ff6c69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3006c339cf5e106b3a1ff0b9b2acc7') in 0.050840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable31a.png
+  artifactKey: Guid(51eec22790f28f744b84690fd8476a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable31a.png using Guid(51eec22790f28f744b84690fd8476a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38a45e08ab66108e76a9d87fb8314ce') in 0.149269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable13a.png
+  artifactKey: Guid(0bea5e3cce3588046a5c65cacb541701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable13a.png using Guid(0bea5e3cce3588046a5c65cacb541701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852b58d8fb1b73a6b28cf908df26c3d1') in 0.072140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Food PNGs/vegetable12.png
+  artifactKey: Guid(beb5cad8127d92247b0e20f99da5d46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/vegetable12.png using Guid(beb5cad8127d92247b0e20f99da5d46c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2ad3a805b7d68aba08ef27e80b61074') in 0.072953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/newBackground-export.png
+  artifactKey: Guid(be2802f8aa462744aa2b6efbc23ab1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/newBackground-export.png using Guid(be2802f8aa462744aa2b6efbc23ab1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e697900d90236aaec4ba2291b731fa73') in 0.019003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Food PNGs/mushroom06a.png
+  artifactKey: Guid(1b0f93c4e6d450a42ab457fbe0c46c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Food PNGs/mushroom06a.png using Guid(1b0f93c4e6d450a42ab457fbe0c46c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245381a364f2dfe08c517eb59cd321aa') in 0.047599 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

@@ -31,6 +31,7 @@ public class ObjectCollision : MonoBehaviour
         {
             if(!IsAddedToCart)
             {
+                if(GameManager.Instance != null) 
                 GameManager.Instance.UpdateScore(spawnableObject.Point);
 
                 sound.PlaySound(0);
@@ -45,6 +46,7 @@ public class ObjectCollision : MonoBehaviour
 
         if(other.CompareTag(deadZone))
         {
+            if(GameManager.Instance != null)
             GameManager.Instance.UpdateScore(-spawnableObject.Point);
 
             sound.PlaySound(1);

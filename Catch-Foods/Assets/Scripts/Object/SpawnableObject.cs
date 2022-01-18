@@ -14,7 +14,7 @@ public class SpawnableObject : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void Start() 
+    private void OnEnable() 
     {
         SetObject();
     }
