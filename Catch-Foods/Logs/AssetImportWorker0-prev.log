@@ -11,13 +11,13 @@ C:\Program Files\UnityEditorFolder\2021.2.6f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
+C:/Users/akinn/Desktop/CatchFoods/Catch-Foods
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52482
-Successfully changed project path to: C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
-C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
+55093
+Successfully changed project path to: C:/Users/akinn/Desktop/CatchFoods/Catch-Foods
+C:/Users/akinn/Desktop/CatchFoods/Catch-Foods
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,11 +47,11 @@ C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 135.45 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 134.44 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.6f1 (8c4e826ba445)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/akinn/Desktop/Supermarket-Catch-Foods/Catch-Foods/Assets
+[Subsystems] Discovering subsystems at path C:/Users/akinn/Desktop/CatchFoods/Catch-Foods/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -63,263 +63,42 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEditorFolder/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006154 seconds.
+Registered in 0.178919 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 127.28 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 132.64 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.636 seconds
+- Completed reload, in  2.332 seconds
 Domain Reload Profiling:
-	ReloadAssembly (637ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (2333ms)
+		BeginReloadAssembly (1502ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (469ms)
-			LoadAssemblies (76ms)
+		EndReloadAssembly (574ms)
+			LoadAssemblies (1574ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (87ms)
+			SetupTypeCache (98ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (304ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (324ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (127ms)
+				RefreshPlugins (133ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (116ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010440 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\akinn\Desktop\Supermarket-Catch-Foods\Catch-Foods\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\akinn\Desktop\Supermarket-Catch-Foods\Catch-Foods\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 129.88 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.737 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1737ms)
-		BeginReloadAssembly (115ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1523ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (1079ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (130ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (726ms)
-				ProcessInitializeOnLoadMethodAttributes (76ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 1.30 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5542 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 71 unused Assets / (0.9 MB). Loaded Objects now: 5963.
-Memory consumption went from 215.9 MB to 215.0 MB.
-Total: 4.918700 ms (FindLiveObjects: 0.498900 ms CreateObjectMapping: 0.161500 ms MarkObjects: 3.788600 ms  DeleteObjects: 0.468600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 37024.716300 seconds.
-  path: Assets/Sprites/background2.png
-  artifactKey: Guid(1cb9d80044141c9408b672d910da2f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/background2.png using Guid(1cb9d80044141c9408b672d910da2f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ea563308f912980279795639140cc4') in 0.110312 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Food PNGs/fruit03.png
-  artifactKey: Guid(a62393ece2d01a84c996c97dc9e5f74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit03.png using Guid(a62393ece2d01a84c996c97dc9e5f74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7636714ef85953d1abcdded13f326506') in 0.178173 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Food PNGs/fruit02.png
-  artifactKey: Guid(08d7d2578ab259d408344b41d7d40fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit02.png using Guid(08d7d2578ab259d408344b41d7d40fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2143e965b81ccd7143b551edc28b43b') in 0.066628 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Food PNGs/fruit23a.png
-  artifactKey: Guid(549fdf4a9d43e764383d25f4e1878190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit23a.png using Guid(549fdf4a9d43e764383d25f4e1878190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583b4b03506eb6ca8dd469a0fa8173cc') in 0.236351 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Sprites/Food PNGs/bread04a.png
-  artifactKey: Guid(f19b22507707ca14aa256d22bf117082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/bread04a.png using Guid(f19b22507707ca14aa256d22bf117082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be4face432023d9d4069a4592d86692') in 0.268941 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Sprites/Food PNGs/fish16a.png
-  artifactKey: Guid(5bf3a2c13525981429667fcc7a2a9ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fish16a.png using Guid(5bf3a2c13525981429667fcc7a2a9ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b1d3c72dda1a4babd4360de6d003c8') in 0.207259 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Sprites/Food PNGs/fruit26a.png
-  artifactKey: Guid(88707ebe83a86eb4190663a32f22cbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit26a.png using Guid(88707ebe83a86eb4190663a32f22cbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306405df727370a0f50f40df0d10364f') in 0.301445 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Food PNGs/fish16.png
-  artifactKey: Guid(f9e872e6e872fa041968ebd35fb9b404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fish16.png using Guid(f9e872e6e872fa041968ebd35fb9b404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0985a961baafef7c785db923fe67be7') in 0.137786 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Food PNGs/fruit22.png
-  artifactKey: Guid(30cb3b44a9885384db2fba044dac30b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit22.png using Guid(30cb3b44a9885384db2fba044dac30b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb49a365d7c4f014b17c61e8954d7f30') in 0.017719 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Sprites/Food PNGs/fruit22a.png
-  artifactKey: Guid(82b32db33f3298d4fa0e4aeb41984e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit22a.png using Guid(82b32db33f3298d4fa0e4aeb41984e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0cec02d4e7bcadb0d33c6b8272d5f48') in 0.270681 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/Food PNGs/fruit23.png
-  artifactKey: Guid(7984d7232c169424c9ed77419c57ea0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit23.png using Guid(7984d7232c169424c9ed77419c57ea0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc659e5ece4d875f3a7c84556859e560') in 0.165645 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Sprites/Food PNGs/fruit27a.png
-  artifactKey: Guid(4fc4025c9b0ef0347b98ee4d000ab1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit27a.png using Guid(4fc4025c9b0ef0347b98ee4d000ab1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114f027d520a44641aef273ae9c95c51') in 0.043794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/Food PNGs/fruit15a.png
-  artifactKey: Guid(fa8809fdd3db9fc43967df757b34e62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit15a.png using Guid(fa8809fdd3db9fc43967df757b34e62f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49609f9946412bab19c2ad9146918383') in 0.044796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Sprites/Food PNGs/fish18.png
-  artifactKey: Guid(50048e41a85092945bed0a4ead2a47a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fish18.png using Guid(50048e41a85092945bed0a4ead2a47a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efcd4716e33e3ab65ffcfba3b79fa45') in 0.100250 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Sprites/Food PNGs/fruit48a.png
-  artifactKey: Guid(a86153c87870a414ab4e7b5f4e99848d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit48a.png using Guid(a86153c87870a414ab4e7b5f4e99848d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7b0e58798b0219da51f7ffce21dee5') in 0.057147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/Food PNGs/fish14.png
-  artifactKey: Guid(217e4fba577f9b14ba688b425585a285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fish14.png using Guid(217e4fba577f9b14ba688b425585a285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e283b031688972a8e106e978cdeeab') in 0.045362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Food PNGs/meat02.png
-  artifactKey: Guid(a44d570d453b65149811508b3772315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/meat02.png using Guid(a44d570d453b65149811508b3772315e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7b1c4914442d2a9b787ff29e6c30a8') in 0.173785 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Sprites/Food PNGs/fruit26.png
-  artifactKey: Guid(83271e7865ad9494f98e3de307bdd299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit26.png using Guid(83271e7865ad9494f98e3de307bdd299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d57f9ba1852030263b21a1decde9a4') in 0.044924 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Sprites/Food PNGs/fruit14a.png
-  artifactKey: Guid(9c9997637ee475649925dab7c213f6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit14a.png using Guid(9c9997637ee475649925dab7c213f6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0629afccf13f610b0a4ca0bc4f7cfb') in 0.039583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Sprites/Food PNGs/egg02.png
-  artifactKey: Guid(d1428682d32b01d47a780ada0cb3787e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/egg02.png using Guid(d1428682d32b01d47a780ada0cb3787e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb763f304b13f80f9e24b8e267776a9c') in 0.086699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Food PNGs/fruit49.png
-  artifactKey: Guid(f1767029a1a2035478e1fe956d308657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit49.png using Guid(f1767029a1a2035478e1fe956d308657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42eebf43aa70030d5b6400dd3391a7fc') in 0.042883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Sprites/Food PNGs/fruit01a.png
-  artifactKey: Guid(54fbfa16658fed34aa410e9370bb3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit01a.png using Guid(54fbfa16658fed34aa410e9370bb3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c87aa4d6ee7c074ba37fe2f3fcff5a') in 0.056553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Food PNGs/mushroom04.png
-  artifactKey: Guid(67cfcd32503349f43922340b74455442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/mushroom04.png using Guid(67cfcd32503349f43922340b74455442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc6a214a903d6fe4a3ca56196979fc62') in 0.021081 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/Food PNGs/fruit04.png
-  artifactKey: Guid(4fa99e96e22dd334babf40ec8459c026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fruit04.png using Guid(4fa99e96e22dd334babf40ec8459c026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8dcbcfce22217b1fb2b0b3e507939c3') in 0.041607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Food PNGs/fish03.png
-  artifactKey: Guid(4271f7244f2c19443a0fa0a6d715d742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fish03.png using Guid(4271f7244f2c19443a0fa0a6d715d742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e413fa26a9ede0c42e9ee09f8916bbfa') in 0.093030 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/Food PNGs/fish03a.png
-  artifactKey: Guid(2347619c028bdfb48b2a19a7a18bf637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Food PNGs/fish03a.png using Guid(2347619c028bdfb48b2a19a7a18bf637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0294bd43d5d7a9626d30ec5f7275fb8') in 0.076804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Sprites/lamp.png
-  artifactKey: Guid(a7bfed3adf468d94ab194b4addf31f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/lamp.png using Guid(a7bfed3adf468d94ab194b4addf31f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e1ff44a6527a77a1da94cfadcc135c') in 0.085583 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Registered in 0.009619 seconds.

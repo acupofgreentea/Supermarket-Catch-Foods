@@ -5,9 +5,9 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 {
 
 #if UNITY_ANDROID
-    string gameId = "4562893";
+    string gameId = "4569749";
 #else
-    string gameId = "4562892";
+    string gameId = "4569748";
 #endif
     private void Start()
     {
@@ -21,9 +21,9 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 
     public void PlayRewardedAd()
     {
-        if(Advertisement.IsReady("AddPoint"))
+        if(Advertisement.IsReady("addPoint"))
         {
-            Advertisement.Show("AddPoint");
+            Advertisement.Show("addPoint");
         }
         else
         {
@@ -48,7 +48,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
-        if(placementId == "AddPoint" && showResult == ShowResult.Finished)
+        if(placementId == "addPoint" && showResult == ShowResult.Finished)
         {
             GameManager.Instance.AddPointAfterRewardedVideo();
         }
