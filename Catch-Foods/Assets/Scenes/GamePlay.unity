@@ -315,7 +315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialPanel: {fileID: 1316084628}
-  isTutorialFinised: 0
   delay: 2.15
 --- !u!4 &333675055
 Transform:
@@ -330,7 +329,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1722013462}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339439549
 GameObject:
@@ -2282,7 +2281,7 @@ Transform:
   - {fileID: 1101166149}
   - {fileID: 2008124416}
   m_Father: {fileID: 1722013462}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1061863238
 MonoBehaviour:
@@ -2343,7 +2342,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1722013462}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1092533773
 MonoBehaviour:
@@ -3662,9 +3661,9 @@ Transform:
   m_Children:
   - {fileID: 18198291}
   - {fileID: 1298688051}
-  - {fileID: 333675055}
   - {fileID: 1092533772}
   - {fileID: 1061863237}
+  - {fileID: 333675055}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

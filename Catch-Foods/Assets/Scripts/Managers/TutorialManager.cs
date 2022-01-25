@@ -5,13 +5,15 @@ public class TutorialManager : MonoBehaviour
 {
     [SerializeField] private GameObject tutorialPanel;
 
-    [SerializeField] private bool isTutorialFinised = false;
-
     [SerializeField] private float delay;
     
+    private bool isTutorialFinised;
+
+    private const string tutorialKey = "Tutorial"; 
     private void Start()
     {
-        StartCoroutine(ControlTutorialPanelCO());
+        if(PlayerPrefs.GetInt(tutorialKey) == 0)
+            StartCoroutine(ControlTutorialPanelCo());
     }
     
     private void ShowTutorialPanel()
@@ -24,10 +26,13 @@ public class TutorialManager : MonoBehaviour
     {
         tutorialPanel.SetActive(false);
         Time.timeScale = 1;
+        
         isTutorialFinised = true;
+
+        PlayerPrefs.SetInt(tutorialKey, isTutorialFinised ? 1 : 0);
     }
 
-    private IEnumerator ControlTutorialPanelCO()
+    private IEnumerator ControlTutorialPanelCo()
     {
         yield return new WaitForSeconds(delay);
 
