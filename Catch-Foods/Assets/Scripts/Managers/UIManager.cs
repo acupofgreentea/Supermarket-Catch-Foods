@@ -4,6 +4,8 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
 
+    [SerializeField] private TextMeshProUGUI goalScoreText;
+
     [SerializeField] private TextMeshProUGUI timeText;
 
     [SerializeField] private GameObject gameOverPanel;
@@ -22,6 +24,8 @@ public class UIManager : MonoBehaviour
     private void UpdateScoreText()
     {
         scoreText.text = "Score: " + GameManager.Instance.Score;
+
+        goalScoreText.text = "Goal Score: " + GameManager.Instance.DesiredScore;
     }
 
     private void UpdateTimer()

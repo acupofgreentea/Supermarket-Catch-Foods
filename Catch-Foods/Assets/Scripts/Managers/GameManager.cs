@@ -8,6 +8,8 @@ public class GameManager : Singleton<GameManager>
 
     public int Score {get; set;}
 
+    public int DesiredScore {get => desiredScore; set => desiredScore = value;}
+
     public float Timer {get; set;}
 
     public static Action OnNextLevel;
