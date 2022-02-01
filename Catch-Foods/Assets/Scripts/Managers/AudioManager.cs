@@ -7,14 +7,8 @@ public class AudioManager : MonoBehaviour
 	private float soundEffectVolume;
 	[SerializeField] private AudioMixerGroup musicMixerGroup;
 	[SerializeField] private AudioMixerGroup soundEffectMixerGroup;
-	[SerializeField] private GameObject settingsPanel;
 
 	private void Awake() => DontDestroyOnLoad(gameObject);
-	
-	public void ControlSettingsPanel(bool active)
-	{
-		settingsPanel.SetActive(active);
-	}
 	public void OnMusicSliderValueChanged(float value)
 	{
 		musicVolume = value;
