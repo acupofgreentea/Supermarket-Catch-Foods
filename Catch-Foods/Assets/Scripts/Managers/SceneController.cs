@@ -5,7 +5,9 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] private RectTransform panel;
 
-    [SerializeField] private float tweenTime = 0.7f;
+    [SerializeField] private float tweenTime;
+
+    [SerializeField] private float delay;
 
     private void Start() 
     {
@@ -20,10 +22,13 @@ public class SceneController : MonoBehaviour
     {
         LeanTween.scale(panel, Vector2.one, 0);
         
-        LeanTween.scale(panel, Vector2.zero, tweenTime).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() => 
-        {SetTransitionPanel(false);});
+        LeanTween.scale(panel, Vector2.zero, tweenTime).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
+        {
+            SetTransitionPanel(false);
+            SceneManager.LoadSceneAsync(index);
+        }
+        );
 
-        SceneManager.LoadSceneAsync(index);
     }
 
     private void SetTransitionPanel(bool active)

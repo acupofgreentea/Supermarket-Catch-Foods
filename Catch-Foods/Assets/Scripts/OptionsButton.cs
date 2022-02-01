@@ -3,6 +3,7 @@ using UnityEngine;
 public class OptionsButton : MonoBehaviour
 {
     [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private float tweenTime;
     private void Start() 
     {
         settingsPanel.transform.localScale = Vector2.zero;
@@ -10,11 +11,11 @@ public class OptionsButton : MonoBehaviour
     public void OpenOptions()
     {
         settingsPanel.SetActive(true);
-        settingsPanel.LeanScale(Vector2.one, 0.5f);
+        settingsPanel.LeanScale(Vector2.one, tweenTime);
     }
 
     public void CloseOptions()
     {
-        settingsPanel.LeanScale(Vector2.zero, 0.5f).setEaseInBack().setOnComplete(() => settingsPanel.SetActive(false));
+        settingsPanel.LeanScale(Vector2.zero, tweenTime).setEaseInBack().setOnComplete(() => settingsPanel.SetActive(false));
     }
 }
