@@ -3,12 +3,23 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-	private float musicVolume;
-	private float soundEffectVolume;
 	[SerializeField] private AudioMixerGroup musicMixerGroup;
 	[SerializeField] private AudioMixerGroup soundEffectMixerGroup;
 
-	private void Awake() => DontDestroyOnLoad(gameObject);
+	[SerializeField] private AudioEvent musicEvent;
+
+	private AudioSource source;
+	private float musicVolume;
+	private float soundEffectVolume;
+
+	private void Awake()
+	{	
+		source = GetComponent<AudioSource>();
+
+		DontDestroyOnLoad(gameObject);
+	}
+	private void Start() => musicEvent.PlayAudio(source, 0);
+
 	public void OnMusicSliderValueChanged(float value)
 	{
 		musicVolume = value;

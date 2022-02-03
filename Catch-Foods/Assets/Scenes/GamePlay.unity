@@ -3215,6 +3215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 884972234}
   tweenTime: 0.7
+  delay: 0
 --- !u!4 &1298688051
 Transform:
   m_ObjectHideFlags: 0
@@ -3497,7 +3498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355645381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.43, y: -9.27, z: 0}
+  m_LocalPosition: {x: 0.47, y: -6.21, z: 0}
   m_LocalScale: {x: 25.09174, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
