@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
@@ -7,10 +8,12 @@ public class SceneController : MonoBehaviour
 
     [SerializeField] private float tweenTime;
 
-    [SerializeField] private float delay;
+    [SerializeField] private Sprite[] panelSprites;
 
     private void Start() 
     {
+        ChooseScenePanelSprite();
+
         SetTransitionPanel(true);
 
         LeanTween.scale(panel, Vector2.one, 0);
@@ -20,6 +23,8 @@ public class SceneController : MonoBehaviour
     }
     public void LoadSceneByIndex(int index)
     {
+        ChooseScenePanelSprite();
+
         LeanTween.scale(panel, Vector2.one, 0);
         
         LeanTween.scale(panel, Vector2.zero, tweenTime).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() =>
@@ -28,7 +33,12 @@ public class SceneController : MonoBehaviour
             SceneManager.LoadSceneAsync(index);
         }
         );
+        
+    }
 
+    private Sprite ChooseScenePanelSprite()
+    {
+        return panel.GetComponent<Image>().sprite = panelSprites[Random.Range(0, panelSprites.Length)];
     }
 
     private void SetTransitionPanel(bool active)

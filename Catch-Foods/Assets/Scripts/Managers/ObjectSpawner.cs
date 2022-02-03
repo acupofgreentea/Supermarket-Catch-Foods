@@ -14,8 +14,7 @@ public class ObjectSpawner : MonoBehaviour, ISpawner
 
         GameObject spawnedObject = Instantiate(throwableObjects, spawnPoints[randomPos].position, Quaternion.identity);
 
-        if(randomPos == 0) {return;}
-        
+        if(randomPos == 1)
             spawnedObject.GetComponent<ObjectThrowForce>().SetXDirection(-1);
     }
 }

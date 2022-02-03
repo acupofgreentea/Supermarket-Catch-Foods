@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ObjectCollision : MonoBehaviour
@@ -27,6 +28,15 @@ public class ObjectCollision : MonoBehaviour
 
         source = GetComponent<AudioSource>();
     }
+
+    private IEnumerator WaitUntilSourcePlayed()
+    {
+        yield return new WaitUntil(() => source.isPlaying == false);
+
+        gameObject.SetActive(false);
+
+        StopAllCoroutines();
+    }
     
     private void OnTriggerEnter2D(Collider2D other) 
     {
@@ -48,12 +58,16 @@ public class ObjectCollision : MonoBehaviour
 
         if(other.CompareTag(deadZone))
         {
-            if(GameManager.Instance != null)
-            GameManager.Instance.UpdateScore(-spawnableObject.Point);
+            if(GameManager.Instance != null && !IsAddedToCart)
+            {
+                GameManager.Instance.UpdateScore(-spawnableObject.Point);
 
-            objectEvent.PlayAudio(source, 1);
+                objectEvent.PlayAudio(source, 1);
+                
+                StartCoroutine(WaitUntilSourcePlayed());
+            }
 
-            gameObject.SetActive(false);
+
         }
     }
 }
