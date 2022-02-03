@@ -15,7 +15,6 @@ public class ObjectCollision : MonoBehaviour
 
     private Animator anim;
 
-
     private void Awake() 
     {
         spawnableObject = GetComponent<SpawnableObject>();
@@ -28,8 +27,21 @@ public class ObjectCollision : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.CompareTag(cart))
-        {
-            if(!IsAddedToCart)
+        {   
+            if(IsAddedToCart) {return;}
+            
+            if(GameManager.Instance != null) 
+                GameManager.Instance.UpdateScore(spawnableObject.Point);
+
+                sound.PlaySound(0);
+
+                boxCollider.size = new Vector2(0.3f, 0.3f);
+
+                IsAddedToCart = true;
+                
+                anim.enabled = false;
+
+            /*if(!IsAddedToCart)
             {
                 if(GameManager.Instance != null) 
                 GameManager.Instance.UpdateScore(spawnableObject.Point);
@@ -41,7 +53,7 @@ public class ObjectCollision : MonoBehaviour
                 IsAddedToCart = true;
                 
                 anim.enabled = false;
-            }
+            }*/
         }
 
         if(other.CompareTag(deadZone))
