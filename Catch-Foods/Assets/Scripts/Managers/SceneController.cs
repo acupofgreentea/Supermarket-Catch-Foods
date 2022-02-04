@@ -6,9 +6,11 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] private RectTransform panel;
 
+    [SerializeField] private Sprite[] panelSprites;
+
     [SerializeField] private float tweenTime;
 
-    [SerializeField] private Sprite[] panelSprites;
+    [SerializeField] private LeanTweenType leanType;
 
     private void Start() 
     {
@@ -18,7 +20,7 @@ public class SceneController : MonoBehaviour
 
         LeanTween.scale(panel, Vector2.one, 0);
 
-        LeanTween.scale(panel, Vector2.zero, tweenTime).setEase(LeanTweenType.easeInOutExpo).setOnComplete(() 
+        LeanTween.scale(panel, Vector2.zero, tweenTime).setEase(leanType).setOnComplete(() 
         => {SetTransitionPanel(false);});
     }
     public void LoadSceneByIndex(int index)
