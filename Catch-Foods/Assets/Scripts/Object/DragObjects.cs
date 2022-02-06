@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class DragObjects : MonoBehaviour
 {
+
+    [SerializeField] private ParticleSystem particle;
     private bool isDragging;
 
     private Animator anim;
@@ -45,6 +47,8 @@ public class DragObjects : MonoBehaviour
     {
         isDragging = true;
 
+        particle.gameObject.SetActive(true);
+
         dragger.MoveObject();
 
         SetAnimator(false);
@@ -53,6 +57,8 @@ public class DragObjects : MonoBehaviour
     private void OnMouseUp() 
     {
         isDragging = false;
+
+        particle.gameObject.SetActive(false);
 
         if(!objectCollision.IsAddedToCart)
         SetAnimator(true);
