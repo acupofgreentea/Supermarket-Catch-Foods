@@ -60,6 +60,8 @@ public class ObjectCollision : MonoBehaviour
         {
             if(GameManager.Instance != null && !IsAddedToCart)
             {
+                CameraShake.CanShake = true;
+
                 GameManager.Instance.UpdateScore(-spawnableObject.Point);
 
                 objectEvent.PlayAudio(source, 1);
